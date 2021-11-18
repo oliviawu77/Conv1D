@@ -33,7 +33,7 @@ Processing Element(Convolution Core) + Memory Controller + Memory Module(DRAM Me
 *notes 1: All the Data which are needed by Computing need to be fetched only from L0 Buffer.*<br> 
 *notes 2: I assume the Number of overhead of DRAM loading cycles is 100 cycles.*<br>
 
-# Memory Controller Components
+# Memory Controller
 <img src="https://ppt.cc/fXdeKx@.jpg">
 
 ## Mem_Reset.v
@@ -93,3 +93,10 @@ case(L0_Status):
 2'b10: set Buffer Signals
 2'b11: x
 ```
+# Processing Element
+Do Multiply and Accumulate.<br>
+<img src="https://ppt.cc/fvAUYx@.png">
+
+# Memory Module
+It is Composed of 3 DRAMs and 3 L0_Buffers.<br>
+<img src="https://ppt.cc/fwKJMx@.png">
