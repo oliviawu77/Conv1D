@@ -32,8 +32,6 @@ Processing Element(Convolution Core) + Memory Controller + Memory Module(DRAM Me
 <img src="https://ppt.cc/fo8WFx@.png">
 *notes 1: All the Data which are needed by Computing need to be fetched only from L0 Buffer.*<br> 
 *notes 2: I assume the Number of overhead of DRAM loading cycles is 100 cycles.*<br>
-<img src="https://ppt.cc/fCK4ex@.jpg">
-*Assume Number of Data to be load is 4.*<br>
 
 # Memory Controller Components
 <img src="https://ppt.cc/fXdeKx@.jpg">
@@ -60,6 +58,8 @@ There are 2 Registers **Computation_Step_Counter** and **L0_Computation_Step_Cou
 For Simulating the delay of slow DRAM Access.<br>
 I assume loading overhead is 100 clock cycles.<br> 
 After 100 cycle, the data can be smoothly bumped into L0 Buffer at each cycle.<br>
+<img src="https://ppt.cc/fCK4ex@.jpg">
+*Assume Number of Data to be load is 4.*<br>
 
 ## L0_Status_Setting.v
 To set the L0 status.
