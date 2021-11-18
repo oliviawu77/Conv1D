@@ -21,7 +21,7 @@ This project is used to demonstrated the Effect of **loop tiling** and **paralle
   for(j = 0; j < 4; j+=2)
     for(i = 0; i < 8; i++)
       for(k = j; k < 2; k++)
-      Output[i] = Output[i] + W[j] * Input[i+j];
+      Output[i] = Output[i] + W[k] * Input[i+k];
 ```
 
 Compute Sequence is showed in below figure.<br>
